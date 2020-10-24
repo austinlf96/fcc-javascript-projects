@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|Monoton|Turret+Road&display=swap');
+:root{
+  --accent-color: rgb(161, 12, 42);
+  --background-color: rgb(27, 25, 25);
+  --text-color: rgb(243, 236, 236);
+  --preview-font: 'Turret Road', cursive;
+
+}
+body{
+  margin: 0;
+  background-color: var(--background-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+header{
+  display: flex;
+  flex-basis: 100%;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  border: .25rem solid rgb(0, 0, 0);
+  box-shadow:
+    20px 20px 20px inset rgb(27, 25, 25),
+    -10px -10px 20px inset var(--background-color);
+  justify-content: space-between;
+}
+header h2{
+  font-family: 'Monoton', cursive ;
+  margin: .1rem 0 .1rem .25rem;
+  letter-spacing: .5rem;
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 10px 10px black;
+}
+#toggle{
+  color: var(--accent-color);
+  background-color: black;
+  border: 0;
+  margin: .15rem .25rem .15rem 0;
+  border-radius: 4px;
+}
+#toggle:hover{
+  background-color: var(--background-color);
+  border: .05rem groove black;  
+  cursor: pointer;
+}
+.window{
+  border: .25rem solid black;
+  background-color: var(--background-color);
+}
+#header-editor{
+  display: inline-block;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+#editor{
+  display: block;
+  margin-left: .25rem;
+  max-width: 99.3%;
+  min-width: 99.29%;
+  height: 10rem;
+  border: .25rem groove black;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+#preview{
+  display:block;
+  border: .5rem groove black;
+  padding-left: 1rem;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-family: var(--preview-font);
+  letter-spacing: .1rem;
+}
+/* Markdown */
+#preview blockquote{
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 1.1rem;
+  border-left: 3px solid var(--accent-color);
+}
+#preview code{
+  background-color: rgb(83, 82, 82);
+  color: white;
+  display: inline-block;
+  font-size: 1rem;
+  font-family: var(--preview-font);
+  letter-spacing: .2rem;
+}
+#preview h1, #preview h2,#preview h3,#preview h4,#preview h5,#preview h6{
+  display: table;
+  border-bottom: .15rem solid var(--accent-color);
+  border-right: .15rem solid var(--accent-color);
+  border-radius: .2rem;
+}
+#preview a{
+  color: rgb(201, 16, 16);
+}
+#preview a:visited{
+  color: rgb(10, 226, 10);
+}
+#preview a:hover{
+  color:rgb(201, 16, 16);
+}
+#preview pre{
+  padding: .2rem 0 .2rem .5rem;
+}
+table, td, th{
+  border: .1rem solid var(--accent-color);
+  border-radius: 4px;
+  border-collapse: collapse;
+  padding: .25rem;
+  text-align: center;
+}
+
+

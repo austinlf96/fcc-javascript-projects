@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+#map{
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#heatmap{
+    margin-top: 1rem;
+    background-color: white;
+}
+#tooltip{
+    text-align: center;
+    font-size: 1.1rem;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: rgba(46, 42, 42, 0.8);
+    pointer-events: none;
+}
+#legend{
+    background-color: white;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+/*#title{
+
+}
+#description{
+
+}*/
+.cell:hover{
+    fill: black;
+}

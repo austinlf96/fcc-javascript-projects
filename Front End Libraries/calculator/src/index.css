@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Gotu|Oxanium&display=swap');
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('https://art.pixilart.com/a3159e3d69b66ab.png');
+  background-size: contain;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+#container{
+  display: flex;
+  flex-basis: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+#calculator{
+  width: 35vw;
+  height: 90vh;
+  max-height: 90vh;
+  min-width: 35vw;
+  display: grid;
+  position: absolute;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  border-radius: .5rem;
+  border: 1rem groove black;
+  background-color: rgb(161, 20, 15);
+  box-shadow: 
+    .5rem .5rem 1.5rem 1rem,
+    -.5rem -.5rem 1.5rem 1rem;
+}
+#top-half{
+  grid-area: 1/1/2/5;
+  max-width: 100%;
+  max-height: 100%;
+  font-family: 'Oxanium', cursive;
+  font-size: 4rem;
+  border: .2rem solid rgb(58, 57, 57);
+}
+#display{
+  display: block;
+  width: 100%;
+  height: 50%;
+  max-height: 50%;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-color: ivory;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(161, 20, 15) rgb(58, 57, 57);
+}
+#answer{
+  display:block;
+  width: 100%;
+  height: 50%;
+  max-height: 50%;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-color: ivory;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(161, 20, 15) rgb(58, 57, 57);
+}
+#numpad{
+  grid-area: 2/1/6/5;
+  display: grid;
+  min-height: 90%;
+  max-height: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  padding: .5rem;
+  border: .3rem solid rgb(58, 57, 57);
+}
+#zero{
+  grid-area: zero; 
+}
+#one{
+  grid-area: one;
+}
+#two{
+  grid-area: two;
+}
+#three{
+  grid-area: three;
+}
+#four{
+  grid-area: four;
+}
+#five{
+  grid-area: five;
+}
+#six{
+  grid-area: six;
+}
+#seven{
+  grid-area: seven;
+}
+#eight{
+  grid-area: eight;
+}
+#nine{
+  grid-area: nine;
+}
+#clear{
+  grid-area: clear;
+  justify-self: center;
+}
+#decimal{
+  grid-area: decimal;
+}
+#numbers{
+  grid-area: 1/1/6/4;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: 
+    'one two three'
+    'four five six'
+    'seven eight nine'
+    'clear zero decimal';
+  column-gap: 1rem;
+  row-gap: 1rem;
+  margin-top: .5rem;
+}
+#operators{
+  grid-area:1/4/6/5;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  row-gap: .3rem;
+}
+.number{
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  font-size: 3rem;
+  border: .35rem solid black;
+  background-color: ivory;
+  font-family: 'Gotu', sans-serif;
+  justify-self: center;
+}
+.operator{
+    border-radius: 50%;
+    width: 80%;
+    height: 100%;
+    font-size: 3.75rem;
+    border:.35rem solid black;
+    background-color: ivory;
+    font-family: 'Gotu', sans-serif;
+    justify-self: center;
+}

@@ -1,0 +1,51 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+#container{
+    width: 98vw;
+    height: 98vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+p{
+    display: inline-block;
+    color: ivory;
+    margin: 0 2rem 0 0;
+    padding-bottom: 4rem;
+}
+svg{
+    font-size: 10px;
+}
+#legend{
+    color: ivory;
+    display: flex;
+}
+rect{
+    overflow: hidden;
+}
+#title{
+    font-size: 2rem;
+}
+#tooltip{
+    display: flex;
+    flex-basis: 14.5%;
+    min-width: 14.5%;
+    max-width: 14.5%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    pointer-events: none;
+    border-radius: 1rem;
+    border: 2px solid black;
+    background-color: ivory;
+    color: black;
+}
